@@ -5,7 +5,11 @@ const router = express.Router(); // 路由实例，相当于一个 mini Express 
 const user = require("./user");
 const info = require("./info");
 
-app.use("/user", user);
-app.use("/info", info);
+router.get("/", (req, res, next) => {
+  res.send("api");
+});
+
+router.use("/user", user);
+router.use("/info", info);
 
 module.exports = router;
