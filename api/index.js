@@ -5,8 +5,8 @@ const user = require("./user");
 const info = require("./info");
 
 app.use("/api", router);
-router.use("/user", user);
-router.use("/info", info);
+app.use("/user", user);
+app.use("/info", info);
 
 app.get("/foo", (req, res, next) => {
   res.send("foo");
