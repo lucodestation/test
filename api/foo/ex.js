@@ -1,8 +1,7 @@
 const app = require("express")();
-const { v4 } = require("uuid");
 
 app.get("/ex", (req, res) => {
-  res.end("express");
+  res.status(200).send("express");
 });
 
 module.exports = app;
