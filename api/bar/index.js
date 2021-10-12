@@ -1,7 +1,7 @@
 const app = require("express")();
 
-app.get("/test", (req, res) => {
-  res.end("test");
+app.get("/bar", (req, res) => {
+  res.end("bar");
 });
 
 module.exports = app;
