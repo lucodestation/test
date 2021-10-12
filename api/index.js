@@ -17,4 +17,8 @@ app.get("/test", (req, res) => {
   res.end("test");
 });
 
+app.get("/api/test", (req, res) => {
+  res.end("test");
+});
+
 module.exports = app;
