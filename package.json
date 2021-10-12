@@ -4,22 +4,9 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "express": "^4.17.1",
-    "uuid": "^8.3.2"
+    "express": "^4.17.1"
   },
   "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/lucodestation/test.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/lucodestation/test/issues"
-  },
-  "homepage": "https://github.com/lucodestation/test#readme"
+  "scripts": {},
+  "license": "ISC"
 }
