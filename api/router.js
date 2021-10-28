@@ -7,6 +7,7 @@ const info = require("./info");
 
 router.use("/user", require("./user")); // 不行
 router.use("/info", info); // 不行
+router.use("/article", require("./article"));
 
 router.get("/", (req, res, next) => {
   res.send("api");
