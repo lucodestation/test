@@ -7,6 +7,7 @@ const info = require("./info");
 app.use("/api", router);
 app.use("/user", user);
 app.use("/info", info);
+app.use("/profile", require("./profile"));
 
 app.get("/foo", (req, res, next) => {
   res.send("foo");
