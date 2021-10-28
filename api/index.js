@@ -1,13 +1,8 @@
 const app = require("express")();
 
-const router = require("./router.js");
-const user = require("./user.js");
-const info = require("./info.js");
+const router = require("./router");
 
 app.use("/api", router);
-app.use("/user", user);
-app.use("/info", info);
-app.use("/profile", require("./profile.js"));
 
 app.get("/foo", (req, res, next) => {
   res.send("foo");

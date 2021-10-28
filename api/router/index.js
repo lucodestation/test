@@ -6,6 +6,7 @@ router.get("/", (req, res, next) => {
   res.send("router");
 });
 
-router.use("/info2", require("./info2.js"));
+// require 引用的必须是当前路径下的资源，不能是上级目录下的资源
+router.use("/user", require("./user"));
 
 module.exports = router;
