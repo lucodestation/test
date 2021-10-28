@@ -12,4 +12,8 @@ router.get("/", (req, res, next) => {
   res.send("api");
 });
 
+router.get("/test", (req, res, next) => {
+  res.status(200).json([{ foo: "bar" }]);
+});
+
 module.exports = router;
