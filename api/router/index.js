@@ -8,8 +8,8 @@ const info = require("../info.js");
 router.use("/user", require("../user.js")); // 不行
 router.use("/info", info); // 不行
 router.use("/article", require("../article/index.js"));
-router.use("/article2", require("./article2.js"));
-router.use("/info2", require("./info2.js"));
+router.use("/article2", require("./article2"));
+router.use("/info2", require("./info2"));
 
 router.get("/", (req, res, next) => {
   res.send("api");
